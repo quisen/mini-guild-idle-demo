@@ -1,0 +1,319 @@
+{
+  "anims": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt"
+  ],
+  "categories": [
+    {
+      "id": "body",
+      "label": "Corpo",
+      "z": 10,
+      "parts": [
+        {
+          "id": "female",
+          "name": "Female",
+          "head": "female_head"
+        },
+        {
+          "id": "male",
+          "name": "Male",
+          "head": "male_head"
+        },
+        {
+          "id": "pregnant",
+          "name": "Pregnant",
+          "head": "pregnant_head"
+        },
+        {
+          "id": "skeleton",
+          "name": "Skeleton"
+        },
+        {
+          "id": "teen",
+          "name": "Teen",
+          "head": "teen_head"
+        },
+        {
+          "id": "zombie",
+          "name": "Zombie",
+          "head": "zombie_head"
+        }
+      ]
+    },
+    {
+      "id": "legs",
+      "label": "Pernas",
+      "z": 20,
+      "parts": [
+        {
+          "id": "armour_plate",
+          "name": "Armour Plate"
+        },
+        {
+          "id": "cuffed",
+          "name": "Cuffed"
+        },
+        {
+          "id": "formal",
+          "name": "Formal"
+        },
+        {
+          "id": "formal_striped",
+          "name": "Formal Striped"
+        },
+        {
+          "id": "fur",
+          "name": "Fur"
+        },
+        {
+          "id": "hose",
+          "name": "Hose"
+        },
+        {
+          "id": "leggings",
+          "name": "Leggings"
+        },
+        {
+          "id": "leggings2",
+          "name": "Leggings2"
+        },
+        {
+          "id": "pantaloons",
+          "name": "Pantaloons"
+        },
+        {
+          "id": "pants",
+          "name": "Pants"
+        }
+      ]
+    },
+    {
+      "id": "feet",
+      "label": "Pés",
+      "z": 22,
+      "parts": [
+        {
+          "id": "accessory_plate_toe",
+          "name": "Accessory Plate Toe"
+        },
+        {
+          "id": "accessory_plate_toe_thick",
+          "name": "Accessory Plate Toe Thick"
+        },
+        {
+          "id": "armour_plate",
+          "name": "Armour Plate"
+        },
+        {
+          "id": "boots_basic",
+          "name": "Boots Basic"
+        },
+        {
+          "id": "boots_fold",
+          "name": "Boots Fold"
+        },
+        {
+          "id": "boots_revised",
+          "name": "Boots Revised"
+        },
+        {
+          "id": "boots_rimmed",
+          "name": "Boots Rimmed"
+        },
+        {
+          "id": "hoofs",
+          "name": "Hoofs"
+        }
+      ]
+    },
+    {
+      "id": "torso",
+      "label": "Tronco",
+      "z": 30,
+      "parts": [
+        {
+          "id": "longsleeve_formal",
+          "name": "Longsleeve Formal"
+        },
+        {
+          "id": "longsleeve_formal_striped",
+          "name": "Longsleeve Formal Striped"
+        },
+        {
+          "id": "longsleeve_laced",
+          "name": "Longsleeve Laced"
+        },
+        {
+          "id": "longsleeve_longsleeve",
+          "name": "Longsleeve Longsleeve"
+        },
+        {
+          "id": "longsleeve_longsleeve2",
+          "name": "Longsleeve Longsleeve2"
+        },
+        {
+          "id": "longsleeve_longsleeve2_buttoned",
+          "name": "Longsleeve Longsleeve2 Buttoned"
+        },
+        {
+          "id": "longsleeve_longsleeve2_cardigan",
+          "name": "Longsleeve Longsleeve2 Cardigan"
+        },
+        {
+          "id": "longsleeve_longsleeve2_polo",
+          "name": "Longsleeve Longsleeve2 Polo"
+        },
+        {
+          "id": "longsleeve_longsleeve2_scoop",
+          "name": "Longsleeve Longsleeve2 Scoop"
+        },
+        {
+          "id": "longsleeve_longsleeve2_vneck",
+          "name": "Longsleeve Longsleeve2 Vneck"
+        },
+        {
+          "id": "longsleeve_longsleeves",
+          "name": "Longsleeve Longsleeves"
+        },
+        {
+          "id": "longsleeve_longsleeves2",
+          "name": "Longsleeve Longsleeves2"
+        }
+      ]
+    },
+    {
+      "id": "hair",
+      "label": "Cabelo",
+      "z": 60,
+      "parts": [
+        {
+          "id": "afro",
+          "name": "Afro"
+        },
+        {
+          "id": "balding",
+          "name": "Balding"
+        },
+        {
+          "id": "bangs",
+          "name": "Bangs"
+        },
+        {
+          "id": "bangs_bun",
+          "name": "Bangs Bun"
+        },
+        {
+          "id": "bangslong",
+          "name": "Bangslong"
+        },
+        {
+          "id": "bangsshort",
+          "name": "Bangsshort"
+        },
+        {
+          "id": "bedhead",
+          "name": "Bedhead"
+        },
+        {
+          "id": "bob",
+          "name": "Bob"
+        },
+        {
+          "id": "bob_side_part",
+          "name": "Bob Side Part"
+        },
+        {
+          "id": "buzzcut",
+          "name": "Buzzcut"
+        },
+        {
+          "id": "cornrows",
+          "name": "Cornrows"
+        },
+        {
+          "id": "cowlick",
+          "name": "Cowlick"
+        },
+        {
+          "id": "cowlick_tall",
+          "name": "Cowlick Tall"
+        },
+        {
+          "id": "curly_long",
+          "name": "Curly Long"
+        }
+      ]
+    },
+    {
+      "id": "hat",
+      "label": "Chapéu",
+      "z": 70,
+      "parts": [
+        {
+          "id": "accessory_crest",
+          "name": "Accessory Crest"
+        },
+        {
+          "id": "accessory_crest_centurion",
+          "name": "Accessory Crest Centurion"
+        },
+        {
+          "id": "accessory_plumage",
+          "name": "Accessory Plumage"
+        },
+        {
+          "id": "accessory_plumage_centurion",
+          "name": "Accessory Plumage Centurion"
+        },
+        {
+          "id": "accessory_plumage_legion",
+          "name": "Accessory Plumage Legion"
+        },
+        {
+          "id": "cloth_bandana",
+          "name": "Cloth Bandana"
+        },
+        {
+          "id": "cloth_bandana2",
+          "name": "Cloth Bandana2"
+        },
+        {
+          "id": "cloth_hijab",
+          "name": "Cloth Hijab"
+        }
+      ]
+    },
+    {
+      "id": "head",
+      "label": "Cabeça",
+      "z": 12,
+      "internal": true,
+      "parts": [
+        {
+          "id": "female_head",
+          "name": "Female Head"
+        },
+        {
+          "id": "male_head",
+          "name": "Male Head"
+        },
+        {
+          "id": "pregnant_head",
+          "name": "Pregnant Head"
+        },
+        {
+          "id": "teen_head",
+          "name": "Teen Head"
+        },
+        {
+          "id": "zombie_head",
+          "name": "Zombie Head"
+        }
+      ]
+    }
+  ]
+}

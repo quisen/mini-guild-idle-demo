@@ -1,0 +1,54 @@
+{
+  "type": "pet-grid",
+  "cols": 4,
+  "rows": 8,
+  "frameW": 222,
+  "frameH": 222,
+  "animations": [
+    {
+      "id": "idle",
+      "name": "Idle",
+      "row": 0,
+      "from": 0,
+      "to": 3,
+      "fps": 2,
+      "pingpong": true
+    },
+    {
+      "id": "walk",
+      "name": "Walk",
+      "row": 1,
+      "from": 0,
+      "to": 3,
+      "fps": 5,
+      "pingpong": false
+    },
+    {
+      "id": "rest",
+      "name": "Rest",
+      "row": 3,
+      "from": 0,
+      "to": 3,
+      "fps": 2,
+      "pingpong": true
+    },
+    {
+      "id": "happy",
+      "name": "Happy",
+      "row": 4,
+      "from": 0,
+      "to": 3,
+      "fps": 4,
+      "pingpong": false
+    },
+    {
+      "id": "sit",
+      "name": "Sit",
+      "row": 7,
+      "from": 0,
+      "to": 2,
+      "fps": 2,
+      "pingpong": true
+    }
+  ]
+}

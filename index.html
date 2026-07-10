@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' ws: wss:;"
+    />
+    <title>Mini Guild Idle</title>
+    <!-- PWA: instalável e offline no celular/navegador (ignorado no Electron). -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#10151e" />
+    <link rel="icon" type="image/png" href="./icon-256.png" />
+    <link rel="apple-touch-icon" href="./icon-256.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <script type="module" crossorigin src="./assets/index-D8aImgaC.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="./assets/uniques-ByYmhfX0.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CoXRyUER.css">
+  </head>
+  <body class="mode-compact">
+    <div id="app-row">
+    <!-- Baú flutuante (esquerda, estilo TBH) -->
+    <aside id="float-left" class="float-panel hidden"></aside>
+    <div id="app">
+      <!-- Ticker de log: 1 linha, clique para expandir (estilo TBH) -->
+      <div id="log-ticker" title="Clique para expandir/recolher o histórico">—</div>
+      <!-- Área de combate (canvas) -->
+      <section id="combat">
+        <canvas id="combat-canvas"></canvas>
+         <button id="btn-toggle-farm" class="farm-toggle" title="Auto-repetir fase: Off" aria-label="Auto-repetir fase">↻</button>
+         <button id="btn-toggle-mode" class="mode-toggle" title="Expandir"></button>
+      </section>
+
+      <!-- HUD compacto -->
+      <section id="compact-hud" class="hud">
+        <div class="hud-row">
+          <span id="hud-stage">Fase 1-1 • 0/6</span>
+          <span id="hud-lastdrop" class="dim">—</span>
+        </div>
+      </section>
+
+      <!-- Painel expandido (abas). Visibilidade controlada por body.mode-* no CSS. -->
+      <section id="expanded-panel">
+        <nav id="tabs">
+          <button class="tab active" data-tab="base" title="Guilda: inventário e equipamento"><i>⌂</i><span>Base</span></button>
+          <button class="tab" data-tab="mapa" title="Mapa: fases, dificuldades e bestiário"><i>🗺</i><span>Mapa</span></button>
+          <button class="tab" data-tab="hero" title="Heróis: atributos e skills"><i>♟</i><span>Heróis</span></button>
+          <button class="tab" data-tab="pets" title="Pets: equipamento e skills"><i>🐾</i><span>Pets</span></button>
+          <button class="tab" data-tab="runas" title="Runas: bônus permanentes"><i>✦</i><span>Runas</span></button>
+          <button class="tab" data-tab="guild" title="Guild Master: ranks, missões, gestão da guilda"><i>🏰</i><span>Guilda</span></button>
+          <button class="tab tab-icon-only" data-tab="settings" title="Configurações"><i>⚙</i></button>
+          <span class="tab-spacer"></span>
+          <button id="btn-float-chest" class="tab float-toggle" title="Abrir o Baú numa janela lateral (esquerda)"><i>🧰</i><span>Baú</span></button>
+          <button id="btn-float-craft" class="tab float-toggle" title="Abrir o Cubo numa janela lateral (direita)"><i>◆</i><span>Cubo</span></button>
+        </nav>
+        <div id="tab-content"></div>
+      </section>
+    </div>
+    <!-- Cubo/Oficina flutuante (direita) -->
+    <aside id="float-right" class="float-panel hidden"></aside>
+    </div>
+
+    <!-- Modal genérico (offline / confirmações) -->
+    <div id="modal-overlay" class="hidden">
+      <div id="modal-box">
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

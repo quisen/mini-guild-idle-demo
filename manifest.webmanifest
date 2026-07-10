@@ -1,0 +1,13 @@
+{
+  "name": "Mini Guild Idle",
+  "short_name": "MiniGuild",
+  "description": "Idle RPG de guilda: farme, forje no Cubo e aposente gerações de heróis.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#10151e",
+  "theme_color": "#10151e",
+  "icons": [
+    { "src": "./icon-256.png", "sizes": "256x256", "type": "image/png", "purpose": "any" }
+  ]
+}
