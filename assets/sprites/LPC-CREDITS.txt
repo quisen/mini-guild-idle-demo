@@ -842,18 +842,42 @@ Keep the upstream CREDITS.csv and licenses with redistributed builds.
   - spritesheets/weapon/blunt/flail/walk/flail.png
 
 ./src/renderer/public/assets/sprites/enemies/esqueleto_lanceiro.png
+  - spritesheets/arms/armour/plate/male/hurt.png
+  - spritesheets/arms/armour/plate/male/shoot.png
+  - spritesheets/arms/armour/plate/male/slash.png
+  - spritesheets/arms/armour/plate/male/spellcast.png
+  - spritesheets/arms/armour/plate/male/thrust.png
+  - spritesheets/arms/armour/plate/male/walk.png
   - spritesheets/body/bodies/male/hurt.png
   - spritesheets/body/bodies/male/shoot.png
   - spritesheets/body/bodies/male/slash.png
   - spritesheets/body/bodies/male/spellcast.png
   - spritesheets/body/bodies/male/thrust.png
   - spritesheets/body/bodies/male/walk.png
+  - spritesheets/cape/tattered/bg/hurt.png
+  - spritesheets/cape/tattered/bg/shoot.png
+  - spritesheets/cape/tattered/bg/slash.png
+  - spritesheets/cape/tattered/bg/spellcast.png
+  - spritesheets/cape/tattered/bg/thrust.png
+  - spritesheets/cape/tattered/bg/walk.png
+  - spritesheets/cape/tattered/fg/hurt.png
+  - spritesheets/cape/tattered/fg/shoot.png
+  - spritesheets/cape/tattered/fg/slash.png
+  - spritesheets/cape/tattered/fg/spellcast.png
+  - spritesheets/cape/tattered/fg/thrust.png
+  - spritesheets/cape/tattered/fg/walk.png
   - spritesheets/feet/boots/rimmed/male/hurt/black.png
   - spritesheets/feet/boots/rimmed/male/shoot/black.png
   - spritesheets/feet/boots/rimmed/male/slash/black.png
   - spritesheets/feet/boots/rimmed/male/spellcast/black.png
   - spritesheets/feet/boots/rimmed/male/thrust/black.png
   - spritesheets/feet/boots/rimmed/male/walk/black.png
+  - spritesheets/hat/helmet/barbuta/male/hurt.png
+  - spritesheets/hat/helmet/barbuta/male/shoot.png
+  - spritesheets/hat/helmet/barbuta/male/slash.png
+  - spritesheets/hat/helmet/barbuta/male/spellcast.png
+  - spritesheets/hat/helmet/barbuta/male/thrust.png
+  - spritesheets/hat/helmet/barbuta/male/walk.png
   - spritesheets/head/heads/skeleton/adult/hurt/skeleton.png
   - spritesheets/head/heads/skeleton/adult/shoot/skeleton.png
   - spritesheets/head/heads/skeleton/adult/slash/skeleton.png
@@ -880,6 +904,18 @@ Keep the upstream CREDITS.csv and licenses with redistributed builds.
   - spritesheets/body/bodies/male/spellcast.png
   - spritesheets/body/bodies/male/thrust.png
   - spritesheets/body/bodies/male/walk.png
+  - spritesheets/cape/tattered/bg/hurt.png
+  - spritesheets/cape/tattered/bg/shoot.png
+  - spritesheets/cape/tattered/bg/slash.png
+  - spritesheets/cape/tattered/bg/spellcast.png
+  - spritesheets/cape/tattered/bg/thrust.png
+  - spritesheets/cape/tattered/bg/walk.png
+  - spritesheets/cape/tattered/fg/hurt.png
+  - spritesheets/cape/tattered/fg/shoot.png
+  - spritesheets/cape/tattered/fg/slash.png
+  - spritesheets/cape/tattered/fg/spellcast.png
+  - spritesheets/cape/tattered/fg/thrust.png
+  - spritesheets/cape/tattered/fg/walk.png
   - spritesheets/feet/boots/rimmed/male/hurt/black.png
   - spritesheets/feet/boots/rimmed/male/shoot/black.png
   - spritesheets/feet/boots/rimmed/male/slash/black.png
@@ -906,12 +942,30 @@ Keep the upstream CREDITS.csv and licenses with redistributed builds.
   - spritesheets/torso/bandage/male/walk/white.png
 
 ./src/renderer/public/assets/sprites/enemies/orc_marauder.png
+  - spritesheets/arms/armour/plate/male/hurt.png
+  - spritesheets/arms/armour/plate/male/shoot.png
+  - spritesheets/arms/armour/plate/male/slash.png
+  - spritesheets/arms/armour/plate/male/spellcast.png
+  - spritesheets/arms/armour/plate/male/thrust.png
+  - spritesheets/arms/armour/plate/male/walk.png
   - spritesheets/body/bodies/male/hurt.png
   - spritesheets/body/bodies/male/shoot.png
   - spritesheets/body/bodies/male/slash.png
   - spritesheets/body/bodies/male/spellcast.png
   - spritesheets/body/bodies/male/thrust.png
   - spritesheets/body/bodies/male/walk.png
+  - spritesheets/cape/solid/bg/hurt.png
+  - spritesheets/cape/solid/bg/shoot.png
+  - spritesheets/cape/solid/bg/slash.png
+  - spritesheets/cape/solid/bg/spellcast.png
+  - spritesheets/cape/solid/bg/thrust.png
+  - spritesheets/cape/solid/bg/walk.png
+  - spritesheets/cape/solid/fg/hurt.png
+  - spritesheets/cape/solid/fg/shoot.png
+  - spritesheets/cape/solid/fg/slash.png
+  - spritesheets/cape/solid/fg/spellcast.png
+  - spritesheets/cape/solid/fg/thrust.png
+  - spritesheets/cape/solid/fg/walk.png
   - spritesheets/feet/boots/rimmed/male/hurt/black.png
   - spritesheets/feet/boots/rimmed/male/shoot/black.png
   - spritesheets/feet/boots/rimmed/male/slash/black.png
@@ -942,16 +996,40 @@ Keep the upstream CREDITS.csv and licenses with redistributed builds.
   - spritesheets/torso/armour/leather/male/spellcast.png
   - spritesheets/torso/armour/leather/male/thrust.png
   - spritesheets/torso/armour/leather/male/walk.png
+  - spritesheets/torso/waist/belt_leather/male/hurt/leather.png
+  - spritesheets/torso/waist/belt_leather/male/shoot/leather.png
+  - spritesheets/torso/waist/belt_leather/male/slash/leather.png
+  - spritesheets/torso/waist/belt_leather/male/spellcast/leather.png
+  - spritesheets/torso/waist/belt_leather/male/thrust/leather.png
+  - spritesheets/torso/waist/belt_leather/male/walk/leather.png
   - spritesheets/weapon/sword/scimitar/slash/scimitar.png
   - spritesheets/weapon/sword/scimitar/walk/scimitar.png
 
 ./src/renderer/public/assets/sprites/enemies/homem_lagarto.png
+  - spritesheets/arms/armour/plate/male/hurt.png
+  - spritesheets/arms/armour/plate/male/shoot.png
+  - spritesheets/arms/armour/plate/male/slash.png
+  - spritesheets/arms/armour/plate/male/spellcast.png
+  - spritesheets/arms/armour/plate/male/thrust.png
+  - spritesheets/arms/armour/plate/male/walk.png
   - spritesheets/body/bodies/male/hurt.png
   - spritesheets/body/bodies/male/shoot.png
   - spritesheets/body/bodies/male/slash.png
   - spritesheets/body/bodies/male/spellcast.png
   - spritesheets/body/bodies/male/thrust.png
   - spritesheets/body/bodies/male/walk.png
+  - spritesheets/cape/tattered/bg/hurt.png
+  - spritesheets/cape/tattered/bg/shoot.png
+  - spritesheets/cape/tattered/bg/slash.png
+  - spritesheets/cape/tattered/bg/spellcast.png
+  - spritesheets/cape/tattered/bg/thrust.png
+  - spritesheets/cape/tattered/bg/walk.png
+  - spritesheets/cape/tattered/fg/hurt.png
+  - spritesheets/cape/tattered/fg/shoot.png
+  - spritesheets/cape/tattered/fg/slash.png
+  - spritesheets/cape/tattered/fg/spellcast.png
+  - spritesheets/cape/tattered/fg/thrust.png
+  - spritesheets/cape/tattered/fg/walk.png
   - spritesheets/feet/boots/rimmed/male/hurt/black.png
   - spritesheets/feet/boots/rimmed/male/shoot/black.png
   - spritesheets/feet/boots/rimmed/male/slash/black.png
@@ -970,12 +1048,12 @@ Keep the upstream CREDITS.csv and licenses with redistributed builds.
   - spritesheets/legs/pants/male/spellcast/teal.png
   - spritesheets/legs/pants/male/thrust/teal.png
   - spritesheets/legs/pants/male/walk/teal.png
-  - spritesheets/torso/clothes/sleeveless/sleeveless/male/hurt/forest.png
-  - spritesheets/torso/clothes/sleeveless/sleeveless/male/shoot/forest.png
-  - spritesheets/torso/clothes/sleeveless/sleeveless/male/slash/forest.png
-  - spritesheets/torso/clothes/sleeveless/sleeveless/male/spellcast/forest.png
-  - spritesheets/torso/clothes/sleeveless/sleeveless/male/thrust/forest.png
-  - spritesheets/torso/clothes/sleeveless/sleeveless/male/walk/forest.png
+  - spritesheets/torso/armour/leather/male/hurt.png
+  - spritesheets/torso/armour/leather/male/shoot.png
+  - spritesheets/torso/armour/leather/male/slash.png
+  - spritesheets/torso/armour/leather/male/spellcast.png
+  - spritesheets/torso/armour/leather/male/thrust.png
+  - spritesheets/torso/armour/leather/male/walk.png
 
 ./src/renderer/public/assets/sprites/enemies/rato_arcano.png
   - spritesheets/body/bodies/male/hurt.png
@@ -984,12 +1062,30 @@ Keep the upstream CREDITS.csv and licenses with redistributed builds.
   - spritesheets/body/bodies/male/spellcast.png
   - spritesheets/body/bodies/male/thrust.png
   - spritesheets/body/bodies/male/walk.png
+  - spritesheets/cape/solid/bg/hurt.png
+  - spritesheets/cape/solid/bg/shoot.png
+  - spritesheets/cape/solid/bg/slash.png
+  - spritesheets/cape/solid/bg/spellcast.png
+  - spritesheets/cape/solid/bg/thrust.png
+  - spritesheets/cape/solid/bg/walk.png
+  - spritesheets/cape/solid/fg/hurt.png
+  - spritesheets/cape/solid/fg/shoot.png
+  - spritesheets/cape/solid/fg/slash.png
+  - spritesheets/cape/solid/fg/spellcast.png
+  - spritesheets/cape/solid/fg/thrust.png
+  - spritesheets/cape/solid/fg/walk.png
   - spritesheets/feet/boots/rimmed/male/hurt/black.png
   - spritesheets/feet/boots/rimmed/male/shoot/black.png
   - spritesheets/feet/boots/rimmed/male/slash/black.png
   - spritesheets/feet/boots/rimmed/male/spellcast/black.png
   - spritesheets/feet/boots/rimmed/male/thrust/black.png
   - spritesheets/feet/boots/rimmed/male/walk/black.png
+  - spritesheets/hat/magic/wizard/base/adult/hurt/purple.png
+  - spritesheets/hat/magic/wizard/base/adult/shoot/purple.png
+  - spritesheets/hat/magic/wizard/base/adult/slash/purple.png
+  - spritesheets/hat/magic/wizard/base/adult/spellcast/purple.png
+  - spritesheets/hat/magic/wizard/base/adult/thrust/purple.png
+  - spritesheets/hat/magic/wizard/base/adult/walk/purple.png
   - spritesheets/head/heads/rat/adult/hurt.png
   - spritesheets/head/heads/rat/adult/shoot.png
   - spritesheets/head/heads/rat/adult/slash.png
@@ -1024,6 +1120,18 @@ Keep the upstream CREDITS.csv and licenses with redistributed builds.
   - spritesheets/body/bodies/male/spellcast.png
   - spritesheets/body/bodies/male/thrust.png
   - spritesheets/body/bodies/male/walk.png
+  - spritesheets/cape/solid/bg/hurt.png
+  - spritesheets/cape/solid/bg/shoot.png
+  - spritesheets/cape/solid/bg/slash.png
+  - spritesheets/cape/solid/bg/spellcast.png
+  - spritesheets/cape/solid/bg/thrust.png
+  - spritesheets/cape/solid/bg/walk.png
+  - spritesheets/cape/solid/fg/hurt.png
+  - spritesheets/cape/solid/fg/shoot.png
+  - spritesheets/cape/solid/fg/slash.png
+  - spritesheets/cape/solid/fg/spellcast.png
+  - spritesheets/cape/solid/fg/thrust.png
+  - spritesheets/cape/solid/fg/walk.png
   - spritesheets/feet/boots/rimmed/male/hurt/black.png
   - spritesheets/feet/boots/rimmed/male/shoot/black.png
   - spritesheets/feet/boots/rimmed/male/slash/black.png
