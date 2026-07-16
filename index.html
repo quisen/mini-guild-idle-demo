@@ -16,26 +16,21 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <script type="module" crossorigin src="./assets/index-CAKI5q1v.js"></script>
+    <script type="module" crossorigin src="./assets/index-CZo1EVMy.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/i18n-F-p33B34.js">
     <link rel="modulepreload" crossorigin href="./assets/uniques-D0c3dLqb.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-DMbSMcBV.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-250Utv-Q.css">
   </head>
   <body class="mode-compact">
     <div id="app-row">
-    <!-- Baú flutuante (esquerda, estilo TBH) -->
-    <aside id="float-left" class="float-panel hidden"></aside>
     <div id="app">
-      <!-- Ticker de log: 1 linha, clique para expandir (estilo TBH) -->
       <div id="log-ticker" title="Clique para expandir/recolher o histórico">—</div>
-      <!-- Área de combate (canvas) -->
       <section id="combat">
         <canvas id="combat-canvas"></canvas>
          <button id="btn-toggle-farm" class="farm-toggle" title="Auto-repetir fase: Off" aria-label="Auto-repetir fase">↻</button>
          <button id="btn-toggle-mode" class="mode-toggle" title="Expandir"></button>
       </section>
 
-      <!-- HUD compacto -->
       <section id="compact-hud" class="hud">
         <div class="hud-row">
           <span id="hud-stage">Fase 1-1 • 0/6</span>
@@ -43,7 +38,6 @@
         </div>
       </section>
 
-      <!-- Painel expandido (abas). Visibilidade controlada por body.mode-* no CSS. -->
       <section id="expanded-panel">
         <nav id="tabs">
           <button class="tab active" data-tab="base" title="Guilda: inventário e equipamento"><i>⌂</i><span>Base</span></button>
@@ -54,15 +48,31 @@
           <button class="tab" data-tab="runas" title="Runas: bônus permanentes"><i>✦</i><span>Runas</span></button>
           <button class="tab" data-tab="guild" title="Guild Master: ranks, missões, gestão da guilda"><i>🏰</i><span>Guilda</span></button>
           <span class="tab-spacer"></span>
-          <button id="btn-float-chest" class="tab float-toggle" title="Abrir o Baú numa janela lateral (esquerda)"><i>🧰</i><span>Baú</span></button>
-          <button id="btn-float-craft" class="tab float-toggle" title="Abrir o Cubo numa janela lateral (direita)"><i>◆</i><span>Cubo</span></button>
+          <button id="btn-float-chest" class="tab float-toggle" title="Abrir o Baú (tela dividida)"><i>🧰</i><span>Baú</span></button>
+          <button id="btn-float-craft" class="tab float-toggle" title="Abrir o Cubo (tela cheia)"><i>◆</i><span>Cubo</span></button>
           <button class="tab" data-tab="settings" title="Configurações"><i>⚙</i><span>Config</span></button>
         </nav>
         <div id="tab-content"></div>
       </section>
+
+      <!-- Overlay do Baú: tela dividida inventário + baú -->
+      <div id="overlay-chest" class="app-overlay hidden">
+        <div class="app-overlay-head">
+          <span>🧰 Baú</span>
+          <button class="btn-icon app-overlay-close">✕</button>
+        </div>
+        <div id="overlay-chest-body" class="app-overlay-body"></div>
+      </div>
+
+      <!-- Overlay do Cubo: tela cheia -->
+      <div id="overlay-craft" class="app-overlay hidden">
+        <div class="app-overlay-head">
+          <span>◆ Cubo</span>
+          <button class="btn-icon app-overlay-close">✕</button>
+        </div>
+        <div id="overlay-craft-body" class="app-overlay-body"></div>
+      </div>
     </div>
-    <!-- Cubo/Oficina flutuante (direita) -->
-    <aside id="float-right" class="float-panel hidden"></aside>
     </div>
 
     <!-- Modal genérico (offline / confirmações) -->
