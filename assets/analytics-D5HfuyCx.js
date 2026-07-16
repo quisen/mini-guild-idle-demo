@@ -1,0 +1,46 @@
+import{s as Z,i as z,d as x}from"./i18n-WbBCUrrc.js";import{U as N,H as G}from"./uniques-D0c3dLqb.js";const R=["#f0a832","#7ec8ff","#c084fc"],C=180;let A=null;const K=document.getElementById("analytics-app"),g=(()=>{var t,a;try{return((a=(t=JSON.parse(localStorage.getItem("mgi-save")??"{}"))==null?void 0:t.settings)==null?void 0:a.language)??"pt-BR"}catch{return"pt-BR"}})();Z(g);z(g);document.title=x(g,document.title);function tt(t){var a,i,s,e;return t==="auto"?x(g,"Ataque básico"):t==="tempestade"?x(g,`${((a=N.tempestade)==null?void 0:a.name)??"Tempestade"} (único)`):t==="fenix"?x(g,`${((i=N.fenix)==null?void 0:i.name)??"Fênix"} (único)`):t==="espelho"?x(g,`${((s=N.espelho)==null?void 0:s.name)??"Espelho"} (único)`):x(g,((e=G[t])==null?void 0:e.name)??t)}function h(t){return t>=1e6?`${(t/1e6).toFixed(1)}M`:t>=1e3?`${(t/1e3).toFixed(1)}k`:`${Math.round(t)}`}function J(t){const a=Math.floor(t/60);return a>0?`${a}m${String(Math.floor(t%60)).padStart(2,"0")}s`:`${Math.floor(t)}s`}function I(t,a){const i=t.telemetry.buckets,s=[],e=Math.max(0,i.length-C);for(let n=e;n<i.length;n+=1)s.push(a(i[n]));return s}function et(t,a){return I(t,i=>{let s=0;for(const[e,n]of Object.entries(i.dmg))e.startsWith(`${a}|`)&&(s+=n);return s})}function E(t,a=4){return t.map((i,s)=>{let e=0,n=0;for(let r=Math.max(0,s-a);r<=Math.min(t.length-1,s+a);r+=1)e+=t[r],n+=1;return e/Math.max(1,n)})}const _={death:{color:"#ff6b6b",icon:"☠"},wipe:{color:"#ff3d3d",icon:"💀"},stage:{color:"#7dffa8",icon:"⚔"},boss:{color:"#f0a832",icon:"👑"},level:{color:"#8db7ff",icon:"↑"}};function L(t,a,i,s=[]){const e=t.getContext("2d");if(!e)return;const n=Math.min(window.devicePixelRatio||1,2),r=t.clientWidth,m=t.clientHeight;t.width=r*n,t.height=m*n,e.setTransform(n,0,0,n,0,0),e.clearRect(0,0,r,m);const p=42,j=16,b=8,$=r-p-8,v=m-b-j,S=Math.max(1,...a.flatMap(d=>d.data));e.strokeStyle="rgba(255,255,255,0.07)",e.fillStyle="#8b94a7",e.font='9px "Segoe UI", sans-serif',e.textAlign="right";for(let d=0;d<=4;d+=1){const f=b+v-v*d/4;e.beginPath(),e.moveTo(p,f),e.lineTo(p+$,f),e.stroke(),e.fillText(h(S*d/4),p-4,f+3)}e.textAlign="left",e.fillText(i,p,m-4);for(const d of s){const f=p+$*d.frac;e.strokeStyle=d.color,e.globalAlpha=.55,e.setLineDash([3,3]),e.beginPath(),e.moveTo(f,b),e.lineTo(f,b+v),e.stroke(),e.setLineDash([]),e.globalAlpha=1}for(const d of a)d.data.length<2||(e.strokeStyle=d.color,e.lineWidth=1.6,e.beginPath(),d.data.forEach((f,w)=>{const B=p+$*w/(d.data.length-1),M=b+v-v*f/S;w===0?e.moveTo(B,M):e.lineTo(B,M)}),e.stroke())}function at(t){const a=t.telemetry.buckets;if(a.length<2)return[];const i=a[Math.max(0,a.length-C)].t,s=a[a.length-1].t,e=Math.max(1,s-i);return t.telemetry.events.filter(n=>n.t>=i&&n.t<=s).map(n=>{var r;return{frac:(n.t-i)/e,color:((r=_[n.kind])==null?void 0:r.color)??"#fff"}})}function q(t,a,i){const s=document.createElement("a");s.href=URL.createObjectURL(new Blob([a],{type:i})),s.download=t,s.click(),URL.revokeObjectURL(s.href)}function ot(t){const a=t.party.map(e=>e.slot),i=["t",...a.map(e=>`dmg_slot${e}`),...a.map(e=>`taken_slot${e}`),"gold","xp","kills"],s=t.telemetry.buckets.map(e=>{const n=a.map(r=>Object.entries(e.dmg).filter(([m])=>m.startsWith(`${r}|`)).reduce((m,[,p])=>m+p,0));return[e.t,...n,...a.map(r=>e.taken[r]??0),e.gold,e.xp,e.kills].join(",")});q(`sessao-${t.telemetry.sessionSeconds}s.csv`,[i.join(","),...s].join(`
+`),"text/csv")}function st(){var f,w,B,M,D,F;if(!A)return;const t=A,a=t.telemetry,i=Math.max(1,a.sessionSeconds),s=a.buckets.slice(-60),e=o=>s.reduce((l,c)=>l+o(c),0)/Math.max(1,Math.min(60,s.length)),n=o=>{var l;return((l=t.party.find(c=>c.slot===o))==null?void 0:l.name)??`Herói ${o+1}`},r={};for(const[o,l]of Object.entries(a.totals.dmgBySlotSource)){const[c,u]=o.split("|"),T=Number(c);(r[T]??(r[T]=[])).push({source:u,total:l})}const m=a.events.filter(o=>o.kind==="level"),p=[];for(let o=1;o<m.length;o+=1){const l=Number(((w=(f=m[o-1].label.match(/\(([\d.,]+)/))==null?void 0:f[1])==null?void 0:w.replace(/[.,]/g,""))??0),c=Number(((M=(B=m[o].label.match(/\(([\d.,]+)/))==null?void 0:B[1])==null?void 0:M.replace(/[.,]/g,""))??0),u=(D=m[o].label.match(/Nv\.(\d+)/))==null?void 0:D[1];c>l&&u&&p.push(`Nv.${u}: ${c-l}`)}const j=Object.entries(a.totals.takenByEnemy).sort((o,l)=>l[1]-o[1]).slice(0,8),b=Math.max(1,((F=j[0])==null?void 0:F[1])??1);K.innerHTML=`
+    <header class="an-head">
+      <h1>📊 Análise de Gameplay</h1>
+      <div class="an-meta">
+        <span>Fase ${t.stage}</span>
+        <span>Sessão ${J(i)}</span>
+        <span>${a.totals.kills.toLocaleString()} abates (${(a.totals.kills/(i/60)).toFixed(1)}/min)</span>
+      </div>
+      <div class="an-actions">
+        <button id="an-reset" title="Zera contadores/gráficos — troque a build e meça de novo (A/B)">↺ Zerar sessão</button>
+        <button id="an-csv" title="Buckets de 1s em CSV para planilha">CSV</button>
+        <button id="an-json" title="Snapshot completo em JSON">JSON</button>
+      </div>
+    </header>
+    <div class="an-grid">
+      <div class="an-card"><h3>DPS por herói <small>(média móvel, últimos ${C}s)</small></h3><canvas id="ch-dps"></canvas><div class="an-legend" id="lg-dps"></div></div>
+      <div class="an-card"><h3>Dano sofrido /s</h3><canvas id="ch-taken"></canvas><div class="an-legend" id="lg-taken"></div></div>
+      <div class="an-card"><h3>Ouro por segundo</h3><canvas id="ch-gold"></canvas><div class="an-kpi">🪙 total ${h(a.totals.gold)} · <b>${h(e(o=>o.gold)*60)}/min</b> (últimos 60s)</div></div>
+      <div class="an-card"><h3>XP por segundo</h3><canvas id="ch-xp"></canvas><div class="an-kpi">⭐ total ${h(a.totals.xp)} · <b>${h(e(o=>o.xp)*60)}/min</b> (últimos 60s)</div></div>
+    </div>
+    <div class="an-card an-breakdown">
+      <h3>Composição de dano por herói <small>(totais da sessão)</small></h3>
+      <div class="an-breakdown-grid">
+        ${t.party.map(o=>{var U,W;const l=(r[o.slot]??[]).sort((k,y)=>y.total-k.total),c=l.reduce((k,y)=>k+y.total,0),u=a.totals.overkillBySlot[o.slot]??0,T=c>0?(u/c*100).toFixed(1):"0",P=((U=a.totals.xpRawBySlot)==null?void 0:U[o.slot])??0,X=((W=a.totals.xpAbsorbedBySlot)==null?void 0:W[o.slot])??0,H=P>0?(X/P*100).toFixed(0):null;return`<div class="an-hero-block">
+              <b style="color:${R[o.slot]??"#fff"}">${o.name} · Nv.${o.level}</b>
+              <div class="an-hero-total">Total ${h(c)} dano · média ${h(c/i)}/s · sofrido ${h(a.totals.takenBySlot[o.slot]??0)} · overkill ${T}%${H!=null?` · absorção de XP ${H}%`:""}</div>
+              ${l.map(k=>{const y=c>0?k.total/c*100:0;return`<div class="an-source-row"><span>${tt(k.source)}</span><i style="width:${y.toFixed(1)}%"></i><b>${y.toFixed(1)}% · ${h(k.total)}</b></div>`}).join("")||'<div class="an-source-row"><span class="dim">sem dano registrado ainda</span></div>'}
+            </div>`}).join("")}
+      </div>
+    </div>
+    <div class="an-grid">
+      <div class="an-card">
+        <h3>Quem está te matando <small>(dano sofrido por monstro)</small></h3>
+        ${j.map(([o,l])=>`<div class="an-source-row"><span>${o}</span><i style="width:${(l/b*100).toFixed(1)}%;background:linear-gradient(90deg, rgba(255,107,107,0.3), rgba(255,107,107,0.05))"></i><b>${h(l)}</b></div>`).join("")||'<div class="dim">sem dano sofrido ainda</div>'}
+      </div>
+      <div class="an-card">
+        <h3>Abates por nível <small>(medido — valida a curva)</small></h3>
+        <div class="an-kpl">${p.slice(-10).join(" · ")||'<span class="dim">suba um nível com a janela aberta pra medir</span>'}</div>
+        <h3 style="margin-top:6px">Eventos recentes</h3>
+        <div class="an-events">
+          ${a.events.slice(-14).reverse().map(o=>{var l,c;return`<div class="an-event"><span style="color:${((l=_[o.kind])==null?void 0:l.color)??"#fff"}">${((c=_[o.kind])==null?void 0:c.icon)??"•"}</span> <b>${J(o.t)}</b> ${o.label}</div>`}).join("")||'<div class="dim">nada ainda</div>'}
+        </div>
+      </div>
+    </div>
+  `,document.getElementById("an-reset").onclick=()=>Q(),document.getElementById("an-csv").onclick=()=>ot(t),document.getElementById("an-json").onclick=()=>q(`sessao-${a.sessionSeconds}s.json`,JSON.stringify(t,null,2),"application/json");const $=t.party.map(o=>({label:n(o.slot),color:R[o.slot]??"#fff",data:E(et(t,o.slot))})),v=at(t);L(document.getElementById("ch-dps"),$,"dano/s",v);const S=t.party.map(o=>({label:n(o.slot),color:R[o.slot]??"#fff",data:E(I(t,l=>l.taken[o.slot]??0))}));L(document.getElementById("ch-taken"),S,"dano/s",v),L(document.getElementById("ch-gold"),[{label:"ouro",color:"#f0a832",data:E(I(t,o=>o.gold))}],"ouro/s"),L(document.getElementById("ch-xp"),[{label:"xp",color:"#7dffa8",data:E(I(t,o=>o.xp))}],"xp/s");const d=(o,l)=>{const c=document.getElementById(o);c&&(c.innerHTML=l.map(u=>`<span><i style="background:${u.color}"></i>${u.label}</span>`).join(""))};d("lg-dps",$),d("lg-taken",S)}const Y=t=>{try{A=JSON.parse(t),st()}catch{}};let Q=()=>{var t,a;return(a=(t=window.api)==null?void 0:t.telemetryReset)==null?void 0:a.call(t)};var O,V;(V=(O=window.api)==null?void 0:O.onTelemetryData)==null||V.call(O,Y);if(!window.api&&"BroadcastChannel"in window){const t=new BroadcastChannel("mgi-telemetry");t.onmessage=a=>{typeof a.data=="string"&&Y(a.data)},Q=()=>t.postMessage("reset")}
