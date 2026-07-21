@@ -1,7 +1,6 @@
 # Sprites
 
-Esta pasta guarda os sprites finais consumidos pelo jogo. Os heróis são gerados
-automaticamente a partir de camadas LPC.
+Esta pasta guarda os sprites autorais finais consumidos pelo jogo.
 
 ## Gerar
 
@@ -9,22 +8,15 @@ automaticamente a partir de camadas LPC.
 npm run sprites:all
 ```
 
-Saidas principais:
+Saídas principais:
 
-- `heroes/{guardiao,arqueira,mistico}.png` — heróis LPC (com rosto/cabelo/armas)
-- `enemies/{duende,atirador,xama,lobo,guardiao}.png` — inimigos LPC recoloridos
-- `enemies/limo.png` — slime procedural
+- `authored/*.png` — heróis autorais normalizados em folhas 6×4
+- `enemies/*.png` — monstros autorais normalizados em folhas 6×4
+- `pets/*.png` — pets normais e evoluídos
+- `environment/authored/` — fundos, paralaxe, chão e props autorais
 - `items/*.png` — ícones pixel-art 24x24 de itens (inventário/paper-doll)
 
-Os scripts ficam em `scripts/generate-lpc-sprites.mjs` (LPC + limo) e
-`scripts/generate-item-icons.mjs` (ícones). O compositor LPC usa `LPC_ROOT` se a
-variavel existir, ou baixa/cacheia o repositorio LPC em `.asset-cache/`.
+Os normalizadores e validadores ficam em `scripts/`. `npm run sprites:all`
+regenera heróis, monstros, pets e itens a partir de `art_sources/`.
 
-## Creditos e licencas
-
-Os assets LPC têm licencas mistas por camada. Mantenha:
-
-- `LPC-CREDITS.txt`, com a lista resumida de camadas usadas.
-- `third_party/lpc-generator/CREDITS.csv`, com os creditos upstream completos.
-
-Evite remover esses arquivos ao empacotar builds publicos.
+O runtime não possui compositor, fallback ou assets LPC.
