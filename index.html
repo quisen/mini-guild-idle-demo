@@ -25,10 +25,10 @@
     <link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)" href="./splash/splash-iphone-12-13-pro-max.png" />
     <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" href="./splash/splash-ipad.png" />
     <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" href="./splash/splash-ipad-pro.png" />
-    <script type="module" crossorigin src="./assets/index-BvfMI50X.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/i18n-g1ZFz_K9.js">
+    <script type="module" crossorigin src="./assets/index-DNGTKLHu.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/i18n-DrTbYYcl.js">
     <link rel="modulepreload" crossorigin href="./assets/uniques-CyNm3xyt.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-D6mFL9Gp.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-Buyqft4R.css">
   </head>
   <body class="mode-compact">
     <div id="boot-loading" role="status" aria-live="polite" style="background-image:url('./splash/splash.png')">
@@ -57,21 +57,21 @@
       </section>
 
       <section id="expanded-panel">
+        <!--
+          Menu por INTENÇÃO, não por sistema. A ordem destes botões é fixa e
+          nunca se reorganiza durante o save: desbloqueio só revela um grupo
+          que já tinha lugar reservado (ver src/ui/navigation.ts). Cada grupo
+          abre uma faixa de sub-vistas dentro do próprio conteúdo.
+        -->
         <nav id="tabs">
-          <button class="tab active" data-tab="base" title="Guilda: inventário e equipamento"><i>🏠</i><span>Início</span></button>
-          <button class="tab" data-tab="mapa" title="Mapa: fases, dificuldades e bestiário"><i>🗺</i><span>Mapa</span></button>
-          <button class="tab" data-tab="hero" title="Heróis: atributos e skills"><i>♟</i><span>Heróis</span></button>
-          <button class="tab" data-tab="objetivos" title="Objetivos: quests, missões do dia e conquistas"><i>🎯</i><span>Objetivos</span></button>
-          <button class="tab" data-tab="runas" title="Runas: bônus permanentes"><i>✦</i><span>Runas</span></button>
-          <button class="tab" data-tab="vila" title="Vila: Correio, Casa dos Selos e prédios da guilda"><i>🏘</i><span>Vila</span></button>
-          <button class="tab" data-tab="casa" title="Sede da Guilda: construa e personalize sua casa"><i>🏠</i><span>Sede da Guilda</span></button>
-          <button class="tab" data-tab="guild" title="Guild Master: ranks, missões, gestão da guilda"><i>🏰</i><span>Guilda</span></button>
-          <button class="tab" data-tab="aventura" title="Aventura: modo side-scroll manual, difícil e limitado por dia"><i>🕹</i><span>Aventura</span></button>
-          <button class="tab" data-tab="recompensas" title="Recompensas: baús pendentes de todas as atividades"><i><img class="tab-icon-img" src="./assets/sprites/ui/symbols/system_chest.png" alt="" width="14" height="14"></i><span>Recompensas</span></button>
-          <button class="tab" data-tab="legado" title="Legado: Arsenal, Memória Ancestral, Ascensão e Salão Ancestral"><i>📜</i><span>Legado</span></button>
-          <button class="tab" data-tab="bau" title="Baú: armazenamento extra de itens"><i>🧰</i><span>Baú</span></button>
-          <button class="tab" data-tab="cubo" title="Cubo: síntese, forja, sockets, encantamento"><i><img class="tab-icon-img" src="./assets/sprites/ui/symbols/system_cube.png" alt="" width="14" height="14"></i><span>Cubo</span></button>
-          <button class="tab" data-tab="settings" title="Configurações"><i>⚙</i><span>Config</span></button>
+          <button class="tab active" data-group="base" title="Mochila, baú e equipamento"><i>🏠</i><span>Início</span></button>
+          <button class="tab" data-group="combate" title="Mapa, dificuldades, bestiário e o modo Aventura"><i>⚔</i><span>Combate</span></button>
+          <button class="tab" data-group="herois" title="Atributos, skills, formação e pets"><i>♟</i><span>Heróis</span></button>
+          <button class="tab" data-group="coleta" title="Tudo que está pronto para resgatar, num lugar só"><i>🎁</i><span>Coleta</span></button>
+          <button class="tab" data-group="progressao" title="Todos os bônus permanentes: runas, selos, cartas e legado"><i>✦</i><span>Progressão</span></button>
+          <button class="tab" data-group="vila" title="Correio, postos de trabalho, guilda e a sede construível"><i>🏘</i><span>Vila</span></button>
+          <button class="tab" data-group="cubo" title="Síntese, forja, sockets e encantamento"><i><img class="tab-icon-img" src="./assets/sprites/ui/symbols/system_cube.png" alt="" width="14" height="14"></i><span>Cubo</span></button>
+          <button class="tab" data-group="mais" title="Histórico e configurações"><i>⋯</i><span>Mais</span></button>
         </nav>
         <div id="tab-content"></div>
       </section>
