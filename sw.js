@@ -2,8 +2,8 @@
 // A lista de precache e a versão são injetadas pelo pós-build
 // (scripts/generate-sw-precache.mjs) — em dev ficam vazias e o SW vira um
 // cache-first simples.
-const VERSION = 'dev'; // __SW_VERSION__
-const PRECACHE = []; // __SW_PRECACHE__
+const VERSION = '1e00282f1ceb';
+const PRECACHE = ["./analytics.html","./assets/analytics-BEaFIBXk.css","./assets/analytics-Cp-22Sw-.js","./assets/editor-sprites-BGH1-mUq.css","./assets/editor-sprites-DvrdrSrL.js","./assets/fonts/inter-latin.woff2","./assets/fonts/rajdhani-500.woff2","./assets/fonts/rajdhani-600.woff2","./assets/fonts/rajdhani-700.woff2","./assets/i18n-BvEcRYw4.js","./assets/index-BeNgLnuR.css","./assets/index-PthW2tFn.js","./assets/inter-latin-Dx4kXJAl.woff2","./assets/rajdhani-500-ByNUCHrt.woff2","./assets/rajdhani-600-CXCVEoA9.woff2","./assets/rajdhani-700-BPDUZo87.woff2","./assets/uniques-DRM6TECA.js","./editor-sprites.html","./manifest.webmanifest"];
 
 const CACHE = `mgi-${VERSION}`;
 
