@@ -2,8 +2,8 @@
 // A lista de precache e a versão são injetadas pelo pós-build
 // (scripts/generate-sw-precache.mjs) — em dev ficam vazias e o SW vira um
 // cache-first simples.
-const VERSION = '6cc2baf20682';
-const PRECACHE = ["./analytics.html","./assets/analytics-BEaFIBXk.css","./assets/analytics-D7que9DP.js","./assets/editor-sprites-BGH1-mUq.css","./assets/editor-sprites-IG3LL6VR.js","./assets/fonts/inter-latin.woff2","./assets/fonts/rajdhani-500.woff2","./assets/fonts/rajdhani-600.woff2","./assets/fonts/rajdhani-700.woff2","./assets/i18n-rg52XNzL.js","./assets/index-C5e8VnI4.css","./assets/index-Dn8T_wlY.js","./assets/inter-latin-Dx4kXJAl.woff2","./assets/rajdhani-500-ByNUCHrt.woff2","./assets/rajdhani-600-CXCVEoA9.woff2","./assets/rajdhani-700-BPDUZo87.woff2","./assets/uniques-CFsGy06g.js","./editor-sprites.html","./manifest.webmanifest"];
+const VERSION = 'c93545aa1d20';
+const PRECACHE = ["./analytics.html","./assets/analytics-BEaFIBXk.css","./assets/analytics-D7que9DP.js","./assets/editor-sprites-BGH1-mUq.css","./assets/editor-sprites-IG3LL6VR.js","./assets/fonts/inter-latin.woff2","./assets/fonts/rajdhani-500.woff2","./assets/fonts/rajdhani-600.woff2","./assets/fonts/rajdhani-700.woff2","./assets/i18n-rg52XNzL.js","./assets/index-C5e8VnI4.css","./assets/index-CJ2-FBCA.js","./assets/inter-latin-Dx4kXJAl.woff2","./assets/rajdhani-500-ByNUCHrt.woff2","./assets/rajdhani-600-CXCVEoA9.woff2","./assets/rajdhani-700-BPDUZo87.woff2","./assets/uniques-CFsGy06g.js","./editor-sprites.html","./manifest.webmanifest"];
 
 const CACHE = `mgi-${VERSION}`;
 
