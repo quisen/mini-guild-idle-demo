@@ -2,8 +2,8 @@
 // A lista de precache e a versão são injetadas pelo pós-build
 // (scripts/generate-sw-precache.mjs) — em dev ficam vazias e o SW vira um
 // cache-first simples.
-const VERSION = 'cc7edf4d06a1';
-const PRECACHE = ["./analytics.html","./assets/adventurePanel-GsRgUIQK.js","./assets/analytics-BEaFIBXk.css","./assets/analytics-D5RmJ_QQ.js","./assets/editor-sprites-BGH1-mUq.css","./assets/editor-sprites-W92n3qU6.js","./assets/endgamePanel-DXz3hoK-.js","./assets/fonts/inter-latin.woff2","./assets/fonts/rajdhani-500.woff2","./assets/fonts/rajdhani-600.woff2","./assets/fonts/rajdhani-700.woff2","./assets/i18n-CW8D3nE0.js","./assets/index-B39K62kQ.js","./assets/index-DUebmRxg.css","./assets/inter-latin-Dx4kXJAl.woff2","./assets/rajdhani-500-ByNUCHrt.woff2","./assets/rajdhani-600-CXCVEoA9.woff2","./assets/rajdhani-700-BPDUZo87.woff2","./assets/uniques-cXoeB5sy.js","./editor-sprites.html","./manifest.webmanifest"];
+const VERSION = '485a1cb42629';
+const PRECACHE = ["./analytics.html","./assets/adventurePanel-Ds2bSJe2.js","./assets/analytics-BEaFIBXk.css","./assets/analytics-rgjACQTB.js","./assets/editor-sprites-BGH1-mUq.css","./assets/editor-sprites-DTn4pMqw.js","./assets/enData-CNjETQUS.js","./assets/endgamePanel-BUv_kXxI.js","./assets/fonts/inter-latin.woff2","./assets/fonts/rajdhani-500.woff2","./assets/fonts/rajdhani-600.woff2","./assets/fonts/rajdhani-700.woff2","./assets/i18n-cQeaSJiU.js","./assets/index-5Pv0VYfu.css","./assets/index-D9ArJWp-.js","./assets/inter-latin-Dx4kXJAl.woff2","./assets/loreEndgame-Brsh1I-m.js","./assets/rajdhani-500-ByNUCHrt.woff2","./assets/rajdhani-600-CXCVEoA9.woff2","./assets/rajdhani-700-BPDUZo87.woff2","./assets/uniques-cXoeB5sy.js","./editor-sprites.html","./manifest.webmanifest"];
 
 const CACHE = `mgi-${VERSION}`;
 
